@@ -55,6 +55,7 @@ import java.util.concurrent.TimeUnit;
  * A {@code ForkJoinPool} provides the entry point for submissions
  * from non-{@code ForkJoinTask} clients, as well as management and
  * monitoring operations.
+ * 运行的{@ExecutorService}{@ForkJoinTask}。*{@ForkJoinPool}提供入口点从非提交*{@ForkJoinTask}客户,以及管理和监控操作。
  *
  * <p>A {@code ForkJoinPool} differs from other kinds of {@link
  * ExecutorService} mainly by virtue of employing
@@ -2452,6 +2453,8 @@ public class ForkJoinPool extends AbstractExecutorService {
      * Creates a {@code ForkJoinPool} with the given parameters, without
      * any security checks or parameter validation.  Invoked directly by
      * makeCommonPool.
+     *
+     * 创建一个{@ForkJoinPool}用给定的参数,没有任何安全检查或参数验证。直接调用*使常见的池。
      */
     private ForkJoinPool(int parallelism,
                          ForkJoinWorkerThreadFactory factory,
