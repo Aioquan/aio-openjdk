@@ -28,6 +28,7 @@ Simple Build Instructions:
 
   2. Configure the build:
        bash ./configure
+       bash configure --with-target-bits=64 --with-boot-jdk=/home/aio/software/jdk1.7.0_80 --with-debug-level=slowdebug --enable-debug-symbols ZIP_DEBUGINFO_FILES=0 --with-extra-cxxflags="-Wno-error" --with-extra-cflags="-Wno-error"
   
   3. Build the OpenJDK:
        make all
