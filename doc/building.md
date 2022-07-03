@@ -11,7 +11,7 @@ on Windows) and cloned the top-level JDK repository that you want to build.
 
  2. [Run configure](#running-configure): \
     `bash configure`
-
+    `bash configure --with-target-bits=64 --with-boot-jdk=/home/aio/software/jdk-17.0.3.1 --with-debug-level=slowdebug ZIP_DEBUGINFO_FILES=0 --with-extra-cxxflags="-Wno-error" --with-extra-cflags="-Wno-error"`
     If `configure` fails due to missing dependencies (to either the
     [toolchain](#native-compiler-toolchain-requirements), [build tools](
     #build-tools-requirements), [external libraries](

@@ -1,4 +1,5 @@
 # jdk-17+35
+# bash configure --with-target-bits=64 --with-boot-jdk=/home/aio/software/jdk-17.0.3.1 --with-debug-level=slowdebug ZIP_DEBUGINFO_FILES=0 --with-extra-cxxflags="-Wno-error" --with-extra-cflags="-Wno-error"
 # Welcome to the JDK!
 
 For build instructions please see the
